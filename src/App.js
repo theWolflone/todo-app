@@ -21,7 +21,7 @@ function App() {
       <TodoSearch />
       <TodoList>
         {todos.map((todo) => (
-          <TodoItem key={todo.text} texst={todo.text}/>
+          <TodoItem key={todo.text} text={todo.text}/>
         ))}
       </TodoList>
 
