@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f2f4f5;
+  /* background: var(--Background, linear-gradient(90deg, #36533E 12.5%, #073B49 100%)); */
+  background: #073B49;
   color: #1e1e1f;
   font-family: montserrat, Arial, Helvetica, sans-serif;
 }
