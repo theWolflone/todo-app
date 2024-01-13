@@ -21,14 +21,20 @@ function AppUI() {
 
   return (
     <React.Fragment>
-      <TodoCounter />
+      <TodoCounter/>
 
       <TodoSearch />
 
       <TodoList>
-        {error && <p>Desespérate, hubo un error...</p>}
-        {loading && <p>Estamos cargando, no desesperes...</p>}
-        {!loading && !searchedTodos.length && <p>¡Crea tu primer TODO!</p>}
+        {error && <p style={
+          {color: "white", fontSize:'22px', fontWeight:'bold'}
+        }>Desespérate, hubo un error...</p>}
+        {loading && <p style={
+          {color: "white" , fontSize:'22px',  fontWeight:'bold'}
+        }>Estamos cargando, no desesperes...</p>}
+        {!loading && !searchedTodos.length && <p style={
+          {color: "white", fontSize:'22px', fontWeight:'bold'}
+        }>¡Crea tu primer TODO!</p>}
         {searchedTodos.map((todo) => (
           <TodoItem
             key={todo.text}
